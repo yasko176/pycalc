@@ -17,7 +17,14 @@ elif operator == '-':
     result = operand1 - operand2
 elif operator == '*':
     result = operand1 * operand2
-
+elif operator == '/':
+    if operand2 == 0:
+        print("Erreur : Division par zéro!")
+        sys.exit(1)
+    result = operand1 / operand2
+else:
+    print("Erreur : Opérateur non reconnu. Utilisez +, -, * ou /.")
+    sys.exit(1)
 
 # Afficher le résultat
 print(result)
