@@ -13,6 +13,8 @@ operand2 = float(sys.argv[3])  # Deuxième opérande
 # Effectuer le calcul en fonction de l'opérateur
 if operator == '+':
     result = operand1 + operand2
+elif operator == '-':
+    result = operand1 - operand2
 
 
 # Afficher le résultat
